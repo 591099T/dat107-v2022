@@ -9,8 +9,8 @@
 		<properties>
 		    <!--  Generelle JPA properties -->
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ider-database.westeurope.cloudapp.azure.com:5432/lph"/>
-			<property name="javax.persistence.jdbc.user" value="lph"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ider-database.westeurope.cloudapp.azure.com:5432/h591099"/>
+			<property name="javax.persistence.jdbc.user" value="h591099"/>
 <!--		<property name="javax.persistence.jdbc.password" value="??????"/>  -->
 			
 			<!--  EclipseLink properties -->

@@ -19,7 +19,7 @@ public class Main2SimilarToJDBCMain4 {
 
 		EntityManagerFactory emf = Persistence
 				.createEntityManagerFactory("personPersistenceUnit", 
-				Map.of("javax.persistence.jdbc.password", Passwords.AZURE_PASSWORD));
+				Map.of("javax.persistence.jdbc.password", "5767Killer9248" ));
 
         EntityManager em = emf.createEntityManager();
 
