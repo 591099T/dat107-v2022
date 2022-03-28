@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
-	version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
+	version="2.2" xmlns="http://java.sun.com/xml/ns/persistence">
 	<persistence-unit name="personPersistenceUnit" transaction-type="RESOURCE_LOCAL">
 
 		<class>no.hvl.dat107.Person</class>
@@ -10,11 +10,11 @@
 		    <!--  Generelle JPA properties -->
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
 			<property name="javax.persistence.jdbc.url" 
-				value="jdbc:postgresql://ider-database.westeurope.cloudapp.azure.com:5432/lph"/>
-			<property name="javax.persistence.jdbc.user" value="lph"/>
+				value="jdbc:postgresql://ider-database.westeurope.cloudapp.azure.com:5432/h591099"/>
+			<property name="javax.persistence.jdbc.user" value="h591099"/>
 
-			<!-- Passordet blir satt i Java-koden i stedet 
-			<property name="javax.persistence.jdbc.password" value=""/>  -->
+			<!-- Passordet blir satt i Java-koden i stedet -->
+			<property name="javax.persistence.jdbc.password" value="5767Trygve"/>  
 			
 			<!--  EclipseLink properties -->
             <!--  Se https://wiki.eclipse.org/EclipseLink/Examples/JPA/Logging -->

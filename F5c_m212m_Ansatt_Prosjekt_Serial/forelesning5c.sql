@@ -1,9 +1,9 @@
 -- Mange-til-en-til-mange-eksempel forelesning tirsdag 22. mars 2021.
 
 -- MERK!!! DROP SCHEMA ... CASCADE sletter alt !!!
-DROP SCHEMA IF EXISTS forelesning5c CASCADE;
-CREATE SCHEMA forelesning5c;
-SET search_path TO forelesning5c;
+DROP SCHEMA IF EXISTS obligatorisk CASCADE;
+CREATE SCHEMA obligatorisk;
+SET search_path TO obligatorisk;
 
 CREATE TABLE Ansatt
 (
@@ -30,7 +30,7 @@ CREATE TABLE Prosjektdeltagelse
   Prosjekt_Id INTEGER,
   Timer     INTEGER,
   CONSTRAINT Prosjektdeltagelse_PK PRIMARY KEY (Prosjektdeltagelse_Id),
-  CONSTRAINT AnsattProsjekt_Unik UNIQUE NOT NULL (Ansatt_Id, Prosjekt_Id),
+  CONSTRAINT AnsattProsjekt_Unik UNIQUE (Ansatt_Id, Prosjekt_Id),
   CONSTRAINT Ansatt_FK FOREIGN KEY (Ansatt_Id) REFERENCES Ansatt(Id),
   CONSTRAINT Prosjekt_FK FOREIGN KEY (Prosjekt_Id) REFERENCES Prosjekt(Id)  
 );

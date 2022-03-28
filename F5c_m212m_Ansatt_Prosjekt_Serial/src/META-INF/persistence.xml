@@ -10,15 +10,18 @@
 		<class>no.hvl.dat107.entity.Ansatt</class>
         <class>no.hvl.dat107.entity.Prosjekt</class>
         <class>no.hvl.dat107.entity.Prosjektdeltagelse</class>
+        <class>no.hvl.dat107.entity.Avdeling</class>
         
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
-			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/DAT107" />
-			<property name="javax.persistence.jdbc.user" value="postgres" />
-			<property name="javax.persistence.jdbc.password" value="postgres" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ider-database.westeurope.cloudapp.azure.com:5432/h591099" />
+			<property name="javax.persistence.jdbc.user" value="h591099" />
+			<property name="javax.persistence.jdbc.password" value="5767Trygve" />
 
 			<!-- Se https://wiki.eclipse.org/EclipseLink/Examples/JPA/Logging -->
 			<property name="eclipselink.logging.level" value="WARNING" />
+			
+			
         </properties>
 	</persistence-unit>
 </persistence> 

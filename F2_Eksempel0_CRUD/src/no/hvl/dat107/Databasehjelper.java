@@ -14,8 +14,8 @@ public class Databasehjelper {
 	private EntityManagerFactory emf;
 	
 	public Databasehjelper() {
-		emf = Persistence.createEntityManagerFactory("personPersistenceUnit", 
-				Map.of("javax.persistence.jdbc.password", Passwords.AZURE_PASSWORD));
+		emf = Persistence.createEntityManagerFactory("personPersistenceUnit"); 
+			//	Map.of("javax.persistence.jdbc.password", Passwords.AZURE_PASSWORD));
 	}
 	
 	//Create - Hvordan opprette ny(e) rad(er) i databasen

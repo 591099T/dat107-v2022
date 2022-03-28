@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-@Entity @Table(schema = "forelesning5c")
+@Entity @Table(schema = "obligatorisk")
 public class Prosjekt {
 
     @Id

@@ -9,7 +9,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity 
-@Table(schema = "forelesning5c")
+@Table(schema = "obligatorisk")
 public class Prosjektdeltagelse {
 
     @Id

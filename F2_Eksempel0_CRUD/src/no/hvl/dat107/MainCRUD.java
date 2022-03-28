@@ -37,6 +37,12 @@ public class MainCRUD {
 		dbhjelper.createPerson(new Person(1001, "Per Viskeler"));
 		dbhjelper.deletePerson(1004);
 		skrivUt("Har tilbakestilt db");
+		
+		dbhjelper.createPerson(new Person(1004, "Mus"));
+		skrivUt("Har lagt til Mus");
+		
+		dbhjelper.updatePerson(1004, "Mus Mikke");
+		skrivUt("Har endret navn til Mus Mikke");
 	}
 
 	private static void skrivUt(String tekst) {
