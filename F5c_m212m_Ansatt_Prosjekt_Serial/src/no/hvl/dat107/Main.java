@@ -17,6 +17,17 @@ public class Main {
 	private static AvdelingDAO avdelingdao = new AvdelingDAO();
 
 	public static void main(String[] args) {
+		
+		//Ting som må gjøres i main.
+		//Hente ut og skrive ut ein ansatt på skjermen.
+		
+		//Søke etter ansatt på id.
+		//Søke etter ansatt med brukernavn
+		//Utliste alle ansatte
+		//Oppdatere ansatt sin stilling/lønn og skrive dei ut på nytt 
+		//Oprette ein ny ansatt å skrive han ut på skjermen
+		
+		//Finn avdeling med id, og skriv han ut på skjrmen
 
 		ansattdao.leggTilNyAnsatt(new Ansatt("per", "Perkor", "Janus", LocalDate.of(2022, Month.MARCH, 1),
 				"IT konsulent", new BigDecimal("23020"), 1));
